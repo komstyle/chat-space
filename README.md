@@ -23,12 +23,14 @@ Things you may want to cover:
 
 * ...
 
+# DB設計
+
 ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|emil|string|null: false|
+|emil|string|null: false, unique: true|
 |password|string|null: false|
 
 ### Association
