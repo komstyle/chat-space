@@ -1,0 +1,99 @@
+.mainChat {
+  background-color: $white;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  .mainHeader {
+    height: 100px;
+    border-bottom: #eeeeee 1px solid;
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      &__group {
+        &__name {
+          padding-top: 35px;
+          font-size:20px;
+          color: $dark;
+        }
+        &__member {
+          font-size: 12px;
+          padding-top: 15px;
+          color: $pale;
+        }
+      }
+      &__edit {
+        margin-top: 28px;
+        padding: 0 20px;
+        font-size: 16px;
+        width: 72px;
+        height: 40px;
+        line-height: 40px;
+        border: solid 1px $lightblue;
+        &--btn {
+          color: $lightblue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .mainBody {
+    height: calc(100% - 190px);
+    background-color: #fafafa;
+    padding-left: 0 40px;
+    .mainBox {
+      padding: 35px 46px 0;
+      &__user {
+        display: flex;
+        padding-bottom: 12px;
+        &__name {
+          font-size: 16px;
+          color: $dark;
+        }
+        &__date {
+          font-size: 12px;
+          color: $pale;
+          height: 16px;
+          margin-left: 10px;
+        }
+      }
+      &__message {
+        font-size: 14px;
+        color: #434A54;
+      }
+    }
+  }
+  .mainFooter {
+    height: 90px;
+    background-color: #d2d2d2;
+    .newMessage {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      .inputForm {
+        display: flex;
+        position: relative;
+        width: calc(100% - 100px);
+        &__message {
+          height: 50px;
+          width: 100%;
+          padding: 0 10px;
+        }
+        &__image {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          font-size: 1.3rem;
+          &__file {
+            display: none;
+          }
+        }
+      }
+      .submitBtn {
+        background-color: $lightblue;
+        color:$white;
+        width: 100px;
+        margin-left: 15px;
+      }
+    }
+  }
+}  

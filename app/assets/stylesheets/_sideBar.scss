@@ -1,0 +1,49 @@
+.sideBar {
+  background-color: #253141;
+  color: $white;
+  width: 300px;
+  font-weight: bold;
+  .sideHeader {
+    height: 100px;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+      &__name {
+        font-size:16px;
+      }
+      &__menu {
+        display: flex;
+        &__new {
+          margin-right: 5px;
+          text-decoration: none;
+          color: $white;
+        }
+        &__edit {
+          text-decoration: none;
+          color: $white;
+        }
+      }
+    }
+  }
+  .sideBody {
+    background-color: #2f3e51;
+    height: calc(100% - 100px);
+    .group {
+      padding-top: 20px;
+      padding-left: 20px;
+      &__name {
+        font-size:15px;
+        padding-bottom: 5px;
+      }
+      &__message {
+        font-size:11px;
+        padding-bottom: 40px;
+      }
+    }
+  }
+}
