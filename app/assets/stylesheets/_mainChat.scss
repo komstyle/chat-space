@@ -28,9 +28,9 @@
         width: 72px;
         height: 40px;
         line-height: 40px;
-        border: solid 1px $lightblue;
+        border: solid 1px $light_blue;
         &--btn {
-          color: $lightblue;
+          color: $light_blue;
           text-decoration: none;
         }
       }
@@ -89,7 +89,7 @@
         }
       }
       .submitBtn {
-        background-color: $lightblue;
+        background-color: $light_blue;
         color:$white;
         width: 100px;
         margin-left: 15px;
