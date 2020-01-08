@@ -1,0 +1,36 @@
+.mainChat
+  .mainHeader
+    .mainHeader__box
+      .mainHeader__box__group
+        .mainHeader__box__group__name
+          グループ名
+        .mainHeader__box__group__member
+          kosuke
+      .mainHeader__box__edit
+        =link_to "#", class: "mainHeader__box__edit--btn" do
+          Edit
+  .mainBody
+    .mainBox
+      .mainBox__user
+        .mainBox__user__name
+          こうすけ
+        .mainBox__user__date
+          2020/01/01(mon) 17:30:01
+      .mainBox__message
+        おはよう
+    .mainBox
+      .mainBox__user
+        .mainBox__user__name
+          こうすけ
+        .mainBox__user__date
+          2020/01/01(mon) 17:30:01
+      .mainBox__message
+        おはよう
+  .mainFooter
+    %form.newMessage
+      .inputForm
+        %input{type: "text", class: "inputForm__message", placeholder: "type a message"}
+        %label{class: "inputForm__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "inputForm__image__file"}
+      %input{type: "submit", value: "Send", class: "submitBtn"}
