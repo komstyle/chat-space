@@ -59,3 +59,5 @@ gem 'devise'
 
 	
 gem 'font-awesome-sass'
+gem 'carrierwave'
+gem 'mini_magick', require: 'mini_magick'

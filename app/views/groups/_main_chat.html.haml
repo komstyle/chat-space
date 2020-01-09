@@ -7,8 +7,7 @@
         .mainHeader__box__group__member
           kosuke
       .mainHeader__box__edit
-        =link_to "#", class: "mainHeader__box__edit--btn" do
-          Edit
+        = link_to "Edit", edit_group_path(current_user), method: :get, class: 'mainHeader__box__edit--btn'
   .mainBody
     .mainBox
       .mainBox__user
@@ -34,3 +33,4 @@
           = icon('fas', 'image')
           %input{type: "file", class: "inputForm__image__file"}
       %input{type: "submit", value: "Send", class: "submitBtn"}
+
