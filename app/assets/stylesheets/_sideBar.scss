@@ -33,16 +33,21 @@
   .sideBody {
     background-color: #2f3e51;
     height: calc(100% - 100px);
+    overflow: scroll;
     .group {
       padding-top: 20px;
       padding-left: 20px;
       &__name {
         font-size:15px;
         padding-bottom: 5px;
+        text-decoration: none;
+        color: white;
       }
       &__message {
         font-size:11px;
         padding-bottom: 40px;
+        text-decoration: none;
+        color: white;
       }
     }
   }
