@@ -1,0 +1,26 @@
+.messages
+  .mainChat
+    .mainHeader
+      .mainHeader__box
+        .mainHeader__box__group
+          .mainHeader__box__group__name
+            = @group.name
+          .mainHeader__box__group__member
+            Member:
+            - @group.group_users.each do |group|
+              = group.user.name
+        .mainHeader__box__edit
+          = link_to "Edit", edit_group_path(@group.id), method: :get, class: 'mainHeader__box__edit--btn' 
+    .mainBody
+      = render @messages 
+    .mainFooter
+      .inputForm
+        = form_for [@group, @message] do |f|
+          .inputForm__message
+            = f.text_field :body, class: 'inputForm__message--text', placeholder: 'type a message'
+            .inputForm__image
+              = f.label :image, class: 'inputForm__image__label' do
+                = icon('fas', 'image', class: 'icon')
+                = f.file_field :image, class: 'inputForm__image__file'
+          .submit
+            = f.submit 'Send', class: 'submit--btn'

@@ -40,6 +40,7 @@
     height: calc(100% - 190px);
     background-color: #fafafa;
     padding-left: 0 40px;
+    overflow: scroll;
     .mainBox {
       padding: 35px 46px 0;
       &__user {
@@ -59,40 +60,49 @@
       &__message {
         font-size: 14px;
         color: #434A54;
+        display: flex;
+      }
+      &__image {
+        width: 200px;
+        height: 150px;
       }
     }
   }
   .mainFooter {
     height: 90px;
     background-color: #d2d2d2;
-    .newMessage {
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      .inputForm {
-        display: flex;
+    padding: 20px 40px;
+    .inputForm {
+      &__message {
+        width: 100%;
         position: relative;
-        width: calc(100% - 100px);
-        &__message {
-          height: 50px;
-          width: 100%;
-          padding: 0 10px;
-        }
-        &__image {
-          position: absolute;
-          top: 15px;
-          right: 10px;
-          font-size: 1.3rem;
-          &__file {
-            display: none;
-          }
+      }
+      .new_message {
+        display: flex;
+        padding: 0 10px;
+      }
+      &__message--text {
+        height: 50px;
+        width: 100%;
+        padding: 0 10px;
+      }
+      &__image {
+        top: 15px;
+        right: 15px;
+        font-size: 1.3rem;
+        position: absolute;
+        &__file {
+          display: none;
         }
       }
-      .submitBtn {
+    }
+    .submit {
+      &--btn {
         background-color: $light_blue;
         color:$white;
         width: 100px;
         margin-left: 15px;
+        height: 50px;
       }
     }
   }
