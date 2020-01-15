@@ -11,11 +11,11 @@ $(function(){
           </div>
         </div>
         <div class="mainBox__message">
-          <p class="mainBox__message__body">
+          <div class="mainBox__message__body">
             ${message.body}
-          </p>
-          <img src="${message.image}" class="mainBox__image" >
+          </div>
         </div>
+        <img src="${message.image}" class="mainBox__image" >
       </div>`
     } else if (message.body) {
       var html = `<div class="mainBox" data-message-id="${message.id}">
@@ -28,9 +28,9 @@ $(function(){
           </div>
         </div>
         <div class="mainBox__message">
-          <p class="mainBox__message__body">
+          <div class="mainBox__message__body">
             ${message.body}
-          </p>
+          </div>
         </div>
       </div>`
     } else if (message.image) {
@@ -43,9 +43,7 @@ $(function(){
             ${message.created_at}
           </div>
         </div>
-        <div class="mainBox__message">
-          <img src="${message.image}" class="mainBox__image" >
-        </div>
+        <img src="${message.image}" class="mainBox__image" >
       </div>`
     };
     return html;
