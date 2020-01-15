@@ -34,7 +34,7 @@ $(function(){
         </div>
       </div>`
     } else if (message.image) {
-      var html = `<div class="mainBox" data-message-id="${message.id}>
+      var html = `<div class="mainBox" data-message-id="${message.id}">
         <div class="mainBox__user">
           <div class="mainBox__user__name">
             ${message.user_name}
