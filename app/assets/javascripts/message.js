@@ -43,6 +43,10 @@ $(function(){
             ${message.created_at}
           </div>
         </div>
+        <div class="mainBox__message">
+          <div class="mainBox__message__body">
+          </div>
+        </div>
         <img src="${message.image}" class="mainBox__image" >
       </div>`
     };
